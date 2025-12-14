@@ -970,3 +970,169 @@ textarea:focus {
 .btn-gradient:hover {
   transform: translateY(-3px) scale(1.03);
 }
+/* ===========================================
+   تعديلات جديدة: جميع العناصر جنباً على الجوال
+   =========================================== */
+
+/* ===== HERO SECTION (النص والصورة جنب بعض) ===== */
+.hero {
+    padding: 100px 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 3rem;
+    width: 100%;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== EXPLORE SECTION (البطاقات جنب بعض) ===== */
+.explore-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== PROJECTS SECTION (المشاريع جنب بعض) ===== */
+.projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== COMMUNITY SECTION (المجتمع جنب بعض) ===== */
+.community-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== CONTACT SECTION (التواصل جنب بعض) ===== */
+.contact-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== RESPONSIVE - الجوال (يبقى جنباً) ===== */
+@media (max-width: 768px) {
+    /* Hero */
+    .hero-container {
+        flex-direction: row !important;
+        gap: 1.5rem;
+    }
+
+    .hero-image img {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    /* تصغير خط الوصف ليتناسق */
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* البطاقات تبقى جنباً */
+    .explore-grid,
+    .projects-grid,
+    .community-grid,
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+        gap: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hero */
+    .hero-container {
+        gap: 1rem;
+    }
+
+    .hero-image img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    /* تصغير أكثر للخط */
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+
+    /* البطاقات على الشاشات الصغيرة */
+    .explore-grid,
+    .projects-grid,
+    .community-grid,
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+        gap: 10px !important;
+    }
+}
+/* أضف هذا الكود في نهاية ملف style.css */
+
+/* ===== تعديل Contact Section ليصبح كارد بعد كارد على الجوال ===== */
+
+@media (max-width: 768px) {
+    .contact-grid {
+        display: flex !important;
+        flex-direction: column !important; /* كارد بعد كارد */
+        gap: 20px !important;
+    }
+    
+    .contact-info-card,
+    .contact-form-card {
+        width: 100% !important;
+    }
+}
+
+/* تصغير الخط ليتناسق مع الصورة الدائرية */
+.hero-content p {
+    font-size: 1rem; /* تقليل من 1.1rem إلى 1rem */
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .hero-content p {
+        font-size: 0.9rem; /* أصغر على الجوال */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content p {
+        font-size: 0.85rem; /* أصغر على الشاشات الصغيرة */
+    }
+}
