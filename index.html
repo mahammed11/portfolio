@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer - Mohammed Omaran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <span class="logo-text">Nexus</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#explore" class="nav-link">
+                        <i class="fas fa-compass"></i>
+                        Explore
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-layer-group"></i>
+                        Projects
+                    </a>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-palette"></i>
+                            Design Tools
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-code"></i>
+                            Development
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-chart-bar"></i>
+                            Analytics
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#community" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- ✅ تم استبعاد أزرار Login و Sign Up -->
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-nav-link">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <a href="#explore" class="mobile-nav-link">
+                <i class="fas fa-compass"></i>
+                Explore
+            </a>
+            <a href="#projects" class="mobile-nav-link">
+                <i class="fas fa-layer-group"></i>
+                Projects
+            </a>
+            <a href="#community" class="mobile-nav-link">
+                <i class="fas fa-users"></i>
+                Community
+            </a>
+            <a href="#contact" class="mobile-nav-link">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </a>
+            <!-- ✅ تم استبعاد أزرار Login و Sign Up من الموبايل -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <h1>Hello, I'm Mohammed Omaran</h1>
+                <p>
+                    A Software Engineering student at University of Science and Technology, Sana'a, Yemen (Class of 2026). 
+                    I specialize in <strong>web programming languages</strong> and <strong>mobile application development</strong>.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">View Portfolio</button>
+                    <button class="btn btn-outline">Contact Me</button>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="hero-image">
+                <img src="image/main.jpg" alt="Mohammed Omaran Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" id="explore">
+        <div class="explore-container">
+            <h2 class="explore-title">Explore My Portfolio</h2>
+            <p class="explore-subtitle">
+                Discover my work, skills, and journey as a developer 🚀
+            </p>
+
+            <div class="explore-grid">
+                <!-- Card 1 -->
+                <div class="explore-card">
+                    <div class="icon">💻</div>
+                    <h3>Projects</h3>
+                    <p>Check out my latest web development projects with modern UI and functionality.</p>
+                    <a href="#" class="explore-btn">View Projects →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="explore-card">
+                    <div class="icon">⚡</div>
+                    <h3>Skills</h3>
+                    <p>Explore my technical stack including HTML, CSS, JavaScript, React, and more.</p>
+                    <a href="#" class="explore-btn">View Skills →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="explore-card">
+                    <div class="icon">👨‍💻</div>
+                    <h3>About Me</h3>
+                    <p>Learn more about my journey, passion for coding, and my goals as a developer.</p>
+                    <a href="#" class="explore-btn">Read More →</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="explore-card">
+                    <div class="icon">📩</div>
+                    <h3>Contact</h3>
+                    <p>Have a project or collaboration in mind? Let’s get in touch today!</p>
+                    <a href="#" class="explore-btn">Contact Me →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="projects-container">
+            <h2 class="projects-title">My Projects</h2>
+            <p class="projects-subtitle">Some of my recent work using HTML, CSS, JavaScript & React</p>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="image/Portfolio_Website.jpg" alt="Project 1">
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio website with modern UI, animations, and dark/light mode.</p>
+                        <a href="#" class="project-btn">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="image/E-commerce_Store.jpg" alt="Project 2">
+                    <div class="project-content">
+                        <h3>E-commerce Store</h3>
+                        <p>A complete e-commerce website with product filters, responsive design, and smooth animations.
+                        </p>
+                        <a href="#" class="project-btn">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="image/React_Dashboard.jpg" alt="Project 3">
+                    <div class="project-content">
+                        <h3>React Dashboard</h3>
+                        <p>A modern dashboard built in React with charts, stats, and user-friendly interface.</p>
+                        <a href="#" class="project-btn">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <img src="image/online-blog.jpg" alt="Project 4">
+                    <div class="project-content">
+                        <h3>Blog Platform</h3>
+                        <p>A clean blogging platform with responsive layout, dark/light theme, and comment feature.</p>
+                        <a href="#" class="project-btn">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="community-container">
+            <h2 class="community-title">Join My Community</h2>
+            <p class="community-subtitle">
+                Connect, collaborate, and follow my journey across platforms 🚀
+            </p>
+
+            <div class="community-grid">
+                <!-- Card 1 -->
+                <div class="community-card">
+                    <div class="icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <p>Check out my open-source projects and contributions to the developer community.</p>
+                    <a href="https://github.com/mahammed11" class="community-btn" target="_blank">Follow →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="community-card">
+                    <div class="icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally and see my work experience and achievements.</p>
+                    <a href="#" class="community-btn">Connect →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="community-card">
+                    <div class="icon">🎥</div>
+                    <h3>YouTube</h3>
+                    <p>Watch coding tutorials, project walkthroughs, and live coding sessions.</p>
+                    <a href="#" class="community-btn">Subscribe →</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="community-card">
+                    <div class="icon">🐦</div>
+                    <h3>Twitter</h3>
+                    <p>Follow for updates, tips, and engaging developer discussions.</p>
+                    <a href="#" class="community-btn">Follow →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Let's Work Together</h2>
+            <p class="contact-subtitle">
+                Have a project idea or just want to say hi? Reach out! 🚀
+            </p>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Info -->
+                <div class="contact-info-card">
+                    <h3>Contact Info</h3>
+                    <p>Feel free to reach out via email, phone, or social media.</p>
+
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p>Yemen , Sana'a</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <p>mohammedthefallhemran@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <p>+967 776354998</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/mahammed11" class="social-btn" target="_blank">🐙 GitHub</a>
+                        <a href="#" class="social-btn">💼 LinkedIn</a>
+                        <a href="#" class="social-btn">🎥 YouTube</a>
+                        <a href="#" class="social-btn">🐦 Twitter</a>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-card">
+                    <h3>Send Me a Message</h3>
+                    <form class="contact-form" action="https://formsubmit.co/mohammedthefallhemran@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="btn btn-gradient">Send Message</button>
+                        
+                        <!-- لتجنب اختبار الروبوت (Captcha) -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- ⚠️ استبدل "your-repo-name" باسم المستودع الفعلي على GitHub -->
+                        <input type="hidden" name="_next" value="https://mahammed11.github.io/your-repo-name/thank-you.html">
+                        
+                        <!-- موضوع الرسالة -->
+                        <input type="hidden" name="_subject" value="New message from your portfolio!">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
